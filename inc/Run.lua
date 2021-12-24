@@ -1,6 +1,6 @@
 
 --[[
-BY @jjjij
+BY @kkexk
 #---------------------------------------------------------------------
 ]]
 
@@ -79,8 +79,8 @@ boss..":VERSION","1.0",
 boss..":SUDO_ID:",SUDO_USER,
 boss..":DataCenter:","Amsterdam",
 boss..":UserNameBot:",BOT_User,
-boss..":ApiSource","Sourceee6ee",
-boss..":NameBot:","ابو سعد",
+boss..":ApiSource","sourceFawaz",
+boss..":NameBot:","لينا",
 "TH3BOSS_INSTALL","Yes"
 )
 redis:hset(boss..'username:'..SUDO_USER,'username','@'..GetUser.result.username:gsub('_',[[\_]]))
@@ -93,7 +93,7 @@ Cr_file = io.open("./inc/Token.txt", "w")
 Cr_file:write(Token)
 Cr_file:close()
 print('\27[1;36m￤Token.txt is created.\27[m')
-local Text = "اهلين عزيزي [المطور الاساسي](tg://user?id="..SUDO_USER..") \nشكرا لاستخدامك سورس عرب  \nأرســل الحين /start \nعشان تشوف اوامر المطور  المجهزه بالكيبورد\n\n𓍦"
+local Text = "اهلين عزيزي [المطور الاساسي](tg://user?id="..SUDO_USER..") \nشكرا لاستخدامك سورس لينا  \nأرســل الحين /start \nعشان تشوف اوامر المطور  المجهزه بالكيبورد\n\n𓍦"
 https.request(Api_Token..'/sendMessage?chat_id='..SUDO_USER..'&text='..URL.escape(Text)..'&parse_mode=Markdown')
 local CmdRun = [[
 rm -f ./README.md
